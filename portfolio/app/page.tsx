@@ -1,11 +1,17 @@
 import Image from "next/image";
+import CoverParticles from "@/components/cover-particles";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-     
-     <p>From Home</p>
-
+  return (     
+    <div className="relative z-[1] grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      
+      <CoverParticles />
+      <main className="relative z-[2]">
+        <div className="flex min-h-screen h-full bg-no-repeat bg-gradient-cover">
+          <p>Introduccion</p>
+        </div>
+      </main>
+      
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
