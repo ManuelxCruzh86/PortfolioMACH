@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-balance{
+    text-wrap: balance;
+  }
+}
+
+html,
+body {
+  background: #1f1934;
+  color: #fff;
+}
+
+main {
+  background: #393a47;
+  height: 100vh;
+  height: 100dvh;
+}
