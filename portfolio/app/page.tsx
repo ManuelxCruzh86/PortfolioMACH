@@ -9,8 +9,8 @@ export default function Home() {
       <main>
         <TransitionPage/>
         <div className="flex min-h-[180vh] h-full bg-no-repeat bg-gradient-cover">
-          <p>Introduccion</p>
-        </div>
+{/*           <p>Introduccion</p>
+ */}        </div>
       </main>
     </div>
   );
