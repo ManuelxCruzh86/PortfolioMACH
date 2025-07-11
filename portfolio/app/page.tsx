@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CoverParticles from "@/components/cover-particles";
 import TransitionPage from "@/components/transition-page";
+import Introduction from "@/components/introduction";
 
 export default function Home() {
   return (     
@@ -8,9 +9,11 @@ export default function Home() {
     <CoverParticles />
       <main>
         <TransitionPage/>
+        <Introduction /> 
         <div className="flex min-h-[180vh] h-full bg-no-repeat bg-gradient-cover">
 {/*           <p>Introduccion</p>
- */}        </div>
+ */
+ }        </div>
       </main>
     </div>
   );
