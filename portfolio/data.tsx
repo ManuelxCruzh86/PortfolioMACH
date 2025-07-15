@@ -1,20 +1,20 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { Code2, Terminal, Server, BadgeCheck, Palette, Layers, Gem, Github, Instagram, BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
 
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Github size={30} strokeWidth={1} />,
+        src: "https://github.com/ManuelxCruzh86",
     },
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/manuel-alejandro-cruz-hernandez-5062592b2/",
     },
     {
         id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Instagram size={30} strokeWidth={1} />,
+        src: "https://www.instagram.com/m.cruzxh686/",
     },
     {
         id: 4,
@@ -23,7 +23,7 @@ export const socialNetworks = [
     },
     {
         id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
+        logo: <Youtube size={30} strokeWidth={1} />,
         src: "#!",
     },
 ];
@@ -65,17 +65,17 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        title: "Fullstack Developer",
+        subtitle: "Daten MX",
+        description: "Manejo, Actualizacion y optimizacion de bases de datos en PostgreSql y SQL Server, Desarrollo de Software y Manejo de Apis para empresas inmobiliarias como TerraRegia con .NET y C#",
+        date: "Enero 2024",
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
+        title: "WebApp para el congreso de FACMED",
+        subtitle: "Subdireccion de Investigacion",
+        description: "Desarrollo de WebApp para facilitar y mostrar las platicas,Talleres, Simposios, Abstracts y ponentes que hubo en el congreso de la facultad de medicina guardando y ordenando la informacion en bases de datos ",
+        date: "Junio 2025",
     },
     {
         id: 3,
@@ -96,7 +96,7 @@ export const dataAboutPage = [
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 10,
+        endCounter: 1,
         text: "Años de experiencia",
         lineRight: true,
         lineRightMobile: true,
@@ -110,15 +110,15 @@ export const dataCounter = [
     },
     {
         id: 2,
-        endCounter: 220,
-        text: "Proyectos finalizados",
+        endCounter: 5,
+        text: "Projects Completed",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
-        endCounter: 30,
-        text: "Premios ganadores",
+        endCounter: 264,
+        text: "Code Commits",
         lineRight: false,
         lineRightMobile: false,
     },
@@ -126,30 +126,31 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        icon: <Server />,
+        title: "Bases de datos",
+        description: "Desarrollo y manejo de informacion en bases de datos, optimizacion y actualizacion de las mismas",
     },
     {
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        icon: <Code2 />,
+        title: "Desarrollo web",
+        description: "desarrollo de sitios web a medida con tecnologías modernas, adaptados a las necesidades del cliente",
     },
     {
         icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        title: "Desarrollo de Softwares ",
+        description: "Creación de aplicaciones con tecnologías como .NET, C++ y más",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        icon: <Terminal />,
+        title: "Diseño web",
+        description: "Diseño de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
     },
     {
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        icon: <Pencil />,
+        title: "Diseño 2D",
+        description: "Creación de contenido 2D persuasivo y atractivo que capta la atención del cliente",
     },
+    
 ];
 
 export const dataPortfolio = [

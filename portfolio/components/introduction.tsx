@@ -9,16 +9,16 @@ const Introduction = () => {
             <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
                 <Image src="/Wanted.png" priority width="300" height="300" alt="Avatar" />
                 <div className="flex flex-col justify-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
+                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Hello I'm Manuel<br />
                         <TypeAnimation
                             sequence={[
-                                'puedes programarlo',
+                                'Software Developer',
                                 1000,
-                                'puedes optimizarlo',
+                                'Full Stack Developer',
                                 1000,
-                                'puedes implementarlo',
+                                'Data Analyst',
                                 1000,
-                                'puedes desarrollarlo',
+                                '2D Animator',
                                 1000
                             ]}
                             wrapper="span"
@@ -38,7 +38,7 @@ const Introduction = () => {
                         </a>
                         <a href="/contact"
                             className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary" >
-                            Contacta conmigo
+                            Download CV Contacta conmigo
                         </a>
                     </div>
                 </div>
