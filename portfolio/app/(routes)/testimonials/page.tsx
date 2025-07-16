@@ -12,7 +12,9 @@ import TransitionPage from '@/components/transition-page';
 
 const TestimonialsPage = () => {
     return (
-        <>
+        <div className="relative min-h-screen w-full overflow-hidden">
+            {/* Fondo patron y opacidad */}
+            <div className="absolute inset-0 bg-[url('/Patronfondo.png')] bg-repeat opacity-20 z-0" />
             <TransitionPage />
             <div className='flex flex-col justify-center h-lvh'>
                 <CircleImage />
@@ -49,7 +51,7 @@ const TestimonialsPage = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

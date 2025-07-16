@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react";
 import { socialNetworks } from "@/data";
 import Link from "next/link";
 import { MotionTransition } from "./transition-component";
@@ -11,9 +12,9 @@ const Header = () => {
                 <div className="container justify-between max-w-6xl mx-auto md:flex">
                     <Link href='/'>
                         <h1 className="my-3 text-4xl font-bold text-center md:text-left">
-                            Manuel
-                            <span className="text-secondary"> Cruz Hdz</span>
+                        <span className="text-purple-500">Manuel</span> Cruz Hrdz
                         </h1>
+
                     </Link>
                     <div className="flex items-center justify-center gap-7">
                         {socialNetworks.map(({ logo, src, id }) => (
@@ -21,9 +22,11 @@ const Header = () => {
                                 key={id}
                                 href={src}
                                 target="_blank"
-                                className="transition-all duration-300 hover:text-secondary"
+                                className="group transition-all duration-300 flex items-center justify-center"
                             >
-                                {logo}
+                                {React.cloneElement(logo, {
+                                    className: "text-white group-hover:text-secondary transition-colors",
+                                })}
                             </Link>
                         ))}
                     </div>

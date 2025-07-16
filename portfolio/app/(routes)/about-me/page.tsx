@@ -8,7 +8,10 @@ import TransitionPage from "@/components/transition-page";
 
 const AboutMePage = () => {
     return (
-        <>
+    
+        <div className="relative min-h-screen w-full overflow-hidden">
+            {/* Fondo patron y opacidad */}
+            <div className="absolute inset-0 bg-[url('/Patronfondo.png')] bg-repeat opacity-20 z-0" />
             <TransitionPage />
             <ContainerPage>
                 <Avatar />
@@ -23,7 +26,7 @@ const AboutMePage = () => {
 
                  <TimeLine />
             </ContainerPage>
-        </>
+        </div>
     );
 }
 

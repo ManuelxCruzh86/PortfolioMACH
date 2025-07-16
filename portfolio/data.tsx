@@ -1,66 +1,68 @@
 import { Code2, Terminal, Server, BadgeCheck, Palette, Layers, Gem, Github, Instagram, BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
 
 export const socialNetworks = [
-    {
-        id: 1,
-        logo: <Github size={30} strokeWidth={1} />,
-        src: "https://github.com/ManuelxCruzh86",
-    },
-    {
-        id: 2,
-        logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "https://www.linkedin.com/in/manuel-alejandro-cruz-hernandez-5062592b2/",
-    },
-    {
-        id: 3,
-        logo: <Instagram size={30} strokeWidth={1} />,
-        src: "https://www.instagram.com/m.cruzxh686/",
-    },
-    {
-        id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 5,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+  {
+    id: 1,
+    logo: <Github size={30} className="transition-colors" />,
+    src: "https://github.com/ManuelxCruzh86",
+  },
+  {
+    id: 2,
+    logo: <Linkedin size={30} className="transition-colors" />,
+    src: "https://www.linkedin.com/in/manuel-alejandro-cruz-hernandez-5062592b2/",
+  },
+  {
+    id: 3,
+    logo: <Instagram size={30} className="transition-colors" />,
+    src: "https://www.instagram.com/m.cruzxh686/",
+  },
+  {
+    id: 4,
+    logo: <Rss size={30} className="transition-colors" />,
+    src: "#!",
+  },
+  {
+    id: 5,
+    logo: <Youtube size={30} className="transition-colors" />,
+    src: "https://www.youtube.com/@ManuelAlejandroCruzHernandez",
+  },
 ];
+
 
 
 export const itemsNavbar = [
-    {
-        id: 1,
-        title: "Home",
-        icon: <HomeIcon size={25} color="#fff" strokeWidth={1} />,
-        link: "/",
-    },
-    {
-        id: 2,
-        title: "User",
-        icon: <UserRound size={25} color="#fff" strokeWidth={1} />,
-        link: "/about-me",
-    },
-    {
-        id: 3,
-        title: "Book",
-        icon: <BookText size={25} color="#fff" strokeWidth={1} />,
-        link: "/services",
-    },
-    {
-        id: 4,
-        title: "Target",
-        icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
-        link: "/portfolio",
-    },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-        link: "/testimonials",
-    },
+  {
+    id: 1,
+    title: "Home",
+    icon: <HomeIcon size={25} strokeWidth={1} className="text-white group-hover:text-black transition-colors" />,
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "User",
+    icon: <UserRound size={25} strokeWidth={1} className="text-white group-hover:text-black transition-colors" />,
+    link: "/about-me",
+  },
+  {
+    id: 3,
+    title: "Book",
+    icon: <BookText size={25} strokeWidth={1} className="text-white group-hover:text-black transition-colors" />,
+    link: "/services",
+  },
+  {
+    id: 4,
+    title: "Target",
+    icon: <CodeSquare size={25} strokeWidth={1} className="text-white group-hover:text-black transition-colors" />,
+    link: "/portfolio",
+  },
+  {
+    id: 5,
+    title: "Speech",
+    icon: <Speech size={25} strokeWidth={1} className="text-white group-hover:text-black transition-colors" />,
+    link: "/testimonials",
+  },
 ];
+
 
 export const dataAboutPage = [
     {
@@ -156,28 +158,28 @@ export const serviceData = [
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
+        title: "People for Online Interaction Network",
         image: "/image-1.jpg",
-        urlGithub: "#!",
+        urlGithub: "https://github.com/ManuelxCruzh86/POI-V2",
         urlDemo: "#!",
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
+        title: "Web App de congreso FACMED",
         image: "/image-2.jpg",
-        urlGithub: "#!",
+        urlGithub: "https://github.com/rhindet/CongresoApp",
         urlDemo: "#!",
     },
     {
         id: 3,
-        title: "Estrategias Web",
+        title: "App de Procesamiento de Imagenes",
         image: "/image-3.jpg",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 4,
-        title: "Ideas Creativas",
+        title: "Clon McCarthy's Optimizdo",
         image: "/image-4.jpg",
         urlGithub: "#!",
         urlDemo: "#!",
