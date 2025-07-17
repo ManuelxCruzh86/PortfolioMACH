@@ -2,6 +2,7 @@ import Image from "next/image";
 import CoverParticles from "@/components/cover-particles";
 import TransitionPage from "@/components/transition-page";
 import Introduction from "@/components/introduction";
+import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (     
@@ -10,6 +11,7 @@ export default function Home() {
       <main>
         <TransitionPage/>
         <Introduction /> 
+        <TechStack />
         <div className="flex min-h-[180vh] h-full bg-no-repeat bg-gradient-cover">
 {/*           <p>Introduccion</p>
  */
