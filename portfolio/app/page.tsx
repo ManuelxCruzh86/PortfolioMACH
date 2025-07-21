@@ -3,6 +3,7 @@ import CoverParticles from "@/components/cover-particles";
 import TransitionPage from "@/components/transition-page";
 import Introduction from "@/components/introduction";
 import TechStack from "@/components/TechStack";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (     
@@ -10,7 +11,12 @@ export default function Home() {
     <CoverParticles />
       <main>
         <TransitionPage/>
-        <Introduction /> 
+        <Introduction />
+        <div>
+        <div style={{ height: "30px" }} /> 
+      </div>
+
+        <Experience />
         <TechStack />
         <div className="flex min-h-[180vh] h-full bg-no-repeat bg-gradient-cover">
 {/*           <p>Introduccion</p>

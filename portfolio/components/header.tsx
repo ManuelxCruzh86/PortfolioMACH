@@ -12,7 +12,7 @@ const Header = () => {
                 <div className="container justify-between max-w-6xl mx-auto md:flex">
                     <Link href='/'>
                         <h1 className="my-3 text-4xl font-bold text-center md:text-left">
-                        <span className="text-purple-500">Manuel</span> Cruz Hrdz
+                        <span className="text-purple-500">Manuel</span> Cruz Hdz
                         </h1>
 
                     </Link>

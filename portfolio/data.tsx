@@ -55,29 +55,24 @@ export const itemsNavbar = [
     icon: <CodeSquare size={25} strokeWidth={1} className="text-white group-hover:text-black transition-colors" />,
     link: "/portfolio",
   },
-  {
-    id: 5,
-    title: "Speech",
-    icon: <Speech size={25} strokeWidth={1} className="text-white group-hover:text-black transition-colors" />,
-    link: "/testimonials",
-  },
 ];
 
 
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Fullstack Developer",
-        subtitle: "Daten MX",
-        description: "Manejo, Actualizacion y optimizacion de bases de datos en PostgreSql y SQL Server, Desarrollo de Software y Manejo de Apis para empresas inmobiliarias como TerraRegia con .NET y C#",
-        date: "Enero 2024",
-    },
-    {
-        id: 2,
         title: "WebApp para el congreso de FACMED",
         subtitle: "Subdireccion de Investigacion",
         description: "Desarrollo de WebApp para facilitar y mostrar las platicas,Talleres, Simposios, Abstracts y ponentes que hubo en el congreso de la facultad de medicina guardando y ordenando la informacion en bases de datos ",
         date: "Junio 2025",
+        
+    },
+    {
+       id: 2,
+        title: "Fullstack Developer",
+        subtitle: "Daten MX",
+        description: "Manejo, Actualizacion y optimizacion de bases de datos en PostgreSql y SQL Server, Desarrollo de Software y Manejo de Apis para empresas inmobiliarias como TerraRegia con .NET y C#",
+        date: "Enero 2024", 
     },
     {
         id: 3,
@@ -155,7 +150,7 @@ export const serviceData = [
     
 ];
 
-export const dataPortfolio = [
+/* export const dataPortfolio = [
     {
         id: 1,
         title: "People for Online Interaction Network",
@@ -212,49 +207,61 @@ export const dataPortfolio = [
         urlGithub: "#!",
         urlDemo: "#!",
     }
+]; */
+
+export const dataPortfolio = [
+  {
+    id: 1,
+    title: "People for Online Interaction Network",
+    image: "/image-1.jpg",
+    urlGithub: "https://github.com/ManuelxCruzh86/POI-V2",
+    urlDemo: "#!",
+    description: "Red social moderna para facilitar la interacción entre usuarios.",
+    technologies: ["React", "Tailwind", "Socket.IO", "MYSQL"],
+  },
+  {
+    id: 2,
+    title: "Web App de congreso FACMED",
+    image: "/FacMed.png",
+    urlGithub: "https://github.com/rhindet/CongresoApp",
+    urlDemo: "#!",
+    description: "Plataforma para administrar ponencias, registro y programación del congreso.",
+    technologies: ["React", "Node.js", "Tailwind", "MongoDB"],
+  },
+  {
+    id: 3,
+    title: "App de Procesamiento de Imágenes",
+    image: "/image-3.jpg",
+    urlGithub: "#!",
+    urlDemo: "#!",
+    description: "Aplicación con filtros, detección de color y análisis en tiempo real.",
+    technologies: ["C#", "Windows Forms", "AForge.NET"],
+  },
+  {
+    id: 4,
+    title: "Clon McCarthy's Optimizdo",
+    image: "/image-4.jpg",
+    urlGithub: "#!",
+    urlDemo: "#!",
+    description: "WebApp inspirada en McCarthy's Recreado mejorando su UI/UX y funcionalidades.",
+    technologies: ["React", "Node.js", "Scss", "MYSQL"],
+  },
 ];
 
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-        imageUrl: "/profile2.png",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile3.png",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile4.png",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile5.png",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile6.png",
-    },
+export const dataEducation = [
+  {
+    id: 1,
+    title: "Preparatoria Técnica",
+    subtitle: "Centro de Estudios Tecnológicos Indjustriales y de Servicios No. 133",
+    date: "2019 - 2022",
+    description: "Técnico en logística",
+  },
+  {
+    id: 2,
+    title: "Universidad Autonoma de Nuevo León",
+    subtitle: "Facultad de Ciencias Físico-Matemáticas",
+    date: "2022 - 2025",
+    description: "Licenciado en Multimedia y animación digital",
+  }
 ];
+
