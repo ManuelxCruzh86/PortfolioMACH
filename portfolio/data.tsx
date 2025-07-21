@@ -100,8 +100,8 @@ export const dataCounter = [
     },
     {
         id: 1,
-        endCounter: 80,
-        text: "Clientes satisfechos",
+        endCounter: 8,
+        text: "learned technologies",
         lineRight: true,
         lineRightMobile: false,
     },

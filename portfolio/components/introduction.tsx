@@ -33,16 +33,23 @@ const Introduction = () => {
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
-                        <a href="../portfolio" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
+                        <a
+                            href="../portfolio"
+                            className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl
+                            hover:shadow-xl hover:shadow-purple-500/60 hover:bg-gradient-to-r hover:from-purple-500 hover:to-fuchsia-500
+                            hover:border-purple-600 hover:text-white"
+                        >
                             Ver proyectos
                         </a>
                         <a
-                        href="/MACH_CV.pdf"
-                        download
-                        className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
-                        Descargar CV
+                            href="/MACH_CV.pdf"
+                            download
+                            className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl
+                            hover:shadow-xl hover:shadow-purple-500/60 hover:bg-gradient-to-r hover:from-purple-500 hover:to-fuchsia-500
+                            hover:border-purple-600 hover:text-white"
+                        >
+                            Descargar CV
                         </a>
-
                     </div>
                 </div>
             </div>
