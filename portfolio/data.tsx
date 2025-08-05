@@ -248,12 +248,12 @@ export const dataPortfolio = [
   },
   {
     id: 5,
-    title: "Clon McCarthy's Core",
-    image: "/McCarthys.png",
-    urlGithub: "https://github.com/ManuelxCruzh86/McCarthy-s-Core",
+    title: "AutoBill-Analytics",
+    image: "/AutoBill.png",
+    urlGithub: "https://github.com/ManuelxCruzh86/AutoBill-Analytics",
     urlDemo: "#!",
-    description: "WebApp inspirada en McCarthy's Recreado mejorando su UI/UX y funcionalidades.",
-    technologies: ["React", "Node.js", "Scss", "MYSQL"],
+    description: "Sistema de extracción y análisis de datos de facturas electrónicas, generando un dashboard para su visualización.",
+    technologies: ["Python", "PowerBI", "Tessereact", "SQlite"],
   },
 ];
 
