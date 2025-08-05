@@ -17,19 +17,19 @@ const Header = () => {
 
                     </Link>
                     <div className="flex items-center justify-center gap-7">
-                        {socialNetworks.map(({ logo, src, id }) => (
-                            <Link
-                                key={id}
-                                href={src}
-                                target="_blank"
-                                className="group transition-all duration-300 flex items-center justify-center"
-                            >
-                                {React.cloneElement(logo, {
-                                    className: "text-white group-hover:text-secondary transition-colors",
-                                })}
-                            </Link>
-                        ))}
-                    </div>
+    {socialNetworks.map(({ logo, src, id }) => (
+        <Link
+            key={id}
+            href={src}
+            target="_blank"
+            className="group transition-all duration-300 flex items-center justify-center"
+        >
+            {React.cloneElement(logo, {
+                className: "text-white group-hover:text-purple-500 transition-colors duration-200",
+            })}
+        </Link>
+    ))}
+</div>
                 </div>
             </header>
         </MotionTransition>
