@@ -1,7 +1,7 @@
 import AvatarServices from "@/components/avatar-services";
 import CircleImage from "@/components/cricle-image";
-import SliderServices from "@/components/slider-services";
 import TransitionPage from "@/components/transition-page";
+import SliderServicesClient from '@/components/slider-services-client'
 
 const ServicesPage = () => {
     return (
@@ -23,7 +23,7 @@ const ServicesPage = () => {
                         <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</button>
                     </div>
                     <div>
-                        <SliderServices />
+                        <SliderServicesClient />
                     </div>
                 </div>
             </div>

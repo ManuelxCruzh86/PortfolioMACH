@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CoverParticles from "@/components/cover-particles";
+import CoverParticles from "@/components/cover-particles-client";
 import TransitionPage from "@/components/transition-page";
 import Introduction from "@/components/introduction";
 import TechStack from "@/components/TechStack";
