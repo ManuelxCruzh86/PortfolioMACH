@@ -83,7 +83,7 @@ export const dataAboutPage = [
     },
     {
         id: 4,
-        title: "Prácticas Grado",
+        title: "Prácticas en Centro de Investigacion y desarrollo en Ciencias de la Salud",
         subtitle: "WebWizards Inc.",
         description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
         date: "Mar 2018",
@@ -261,7 +261,7 @@ export const dataEducation = [
   {
     id: 1,
     title: "Preparatoria Técnica",
-    subtitle: "Centro de Estudios Tecnológicos Indjustriales y de Servicios No. 133",
+    subtitle: "Centro de Estudios Tecnológicos Industriales y de Servicios No. 133",
     date: "2019 - 2022",
     description: "Técnico en logística",
   },
