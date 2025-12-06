@@ -20,8 +20,8 @@ const AboutMePage = () => {
             <div className="absolute inset-0 bg-[url('/Patronfondo.png')] bg-repeat opacity-20 z-0" />
             <TransitionPage />
             <ContainerPage>
-                <Avatar />
-                <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-10">
+{/*                 <Avatar /> */} 
+                    <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-10">
                     Toda mi{' '}
                     <span className="font-bold text-purple-500">
                         trayectoria profesional

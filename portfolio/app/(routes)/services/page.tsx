@@ -18,7 +18,7 @@ const ServicesPage = () => {
                             Mis <span className="text-purple-500 font-bold"> Servicios.</span>
                         </h1>
                         <p className="mb-3 text-xl text-gray-300 px-4 md:px-0">
-                            Ofrezco servicios de desarrollo web frontend y backend usando tecnologías como HTML, CSS, JavaScript y frameworks, al igual que la creacion de softwares copn tecnologías actuales. Me enfoco en lograr experiencias limpias, accesibles y responsivas que reflejen la identidad de cada proyecto de forma auténtica.
+                            Ofrezco servicios de desarrollo web frontend y backend usando tecnologías como HTML, CSS, JavaScript y frameworks, al igual que la creacion de softwares con tecnologías actuales. Me enfoco en lograr experiencias limpias, accesibles y responsivas que reflejen la identidad de cada proyecto de forma auténtica.
                         </p>
                         <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</button>
                     </div>

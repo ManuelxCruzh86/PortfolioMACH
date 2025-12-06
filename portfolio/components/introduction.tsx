@@ -7,7 +7,7 @@ const Introduction = () => {
     return (
         <div className="z-20 w-full">
             <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
-                <Image src="/Wanted.png" priority width="300" height="300" alt="Avatar" />
+                <Image src="/avatar2.png" priority width="300" height="300" alt="Avatar" />
                 <div className="flex flex-col justify-center max-w-md">
                     <h1 className=" mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Hello I'm <span className="text-purple-500">Manuel</span><br />
                         <TypeAnimation 
@@ -42,7 +42,7 @@ const Introduction = () => {
                             Ver proyectos
                         </a>
                         <a
-                            href="/MACH_CV.pdf"
+                            href="/CV_MACH.pdf"
                             download
                             className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl
                             hover:shadow-xl hover:shadow-purple-500/60 hover:bg-gradient-to-r hover:from-purple-500 hover:to-fuchsia-500
