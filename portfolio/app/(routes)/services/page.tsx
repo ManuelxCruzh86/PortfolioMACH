@@ -15,12 +15,14 @@ const ServicesPage = () => {
                 <div className="grid items-center justify-center min-h-[70vh] max-w-5xl gap-6 mx-auto md:grid-cols-2">
                 <div className="max-w-[450px]">
                         <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5">
-                            Mis <span className="text-purple-500 font-bold"> Servicios.</span>
+                            My <span className="text-purple-500 font-bold"> Services.</span>
                         </h1>
                         <p className="mb-3 text-xl text-gray-300 px-4 md:px-0">
-                            Ofrezco servicios de desarrollo web frontend y backend usando tecnologías como HTML, CSS, JavaScript y frameworks, al igual que la creacion de softwares copn tecnologías actuales. Me enfoco en lograr experiencias limpias, accesibles y responsivas que reflejen la identidad de cada proyecto de forma auténtica.
+                            I offer frontend and backend web development services using JavaScript, frameworks, .NET, and other technologies, as well as software development with current technologies. I focus on creating clean, accessible, and responsive experiences that authentically reflect the identity of each project.
                         </p>
-                        <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</button>
+                        <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contact me: </button>
+                        <br />
+                        <span>📧 manuel.cruzxh686@gmail.com</span>
                     </div>
                     <div>
                         <SliderServicesClient />
