@@ -17,3 +17,176 @@ main {
   height: 100vh;
   height: 100dvh;
 }
+
+/* Animated dotted ring around avatar */
+.animated-dotted-ring {
+  position: absolute;
+  inset: -8px; /* space around the image */
+  border-radius: 9999px;
+  pointer-events: none;
+  /* Create dotted/dashed segments around a ring */
+  background: repeating-conic-gradient(#a855f7 0 8deg, transparent 8deg 16deg);
+  /* Cut the center to make a ring of ~4px thickness */
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 0);
+          mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 0);
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+/* Aurora gradient glow behind avatar */
+.aurora-glow {
+  position: absolute;
+  inset: -18px; /* glow spread */
+  border-radius: 9999px;
+  pointer-events: none;
+  background: conic-gradient(from 0deg, #a855f7, #ec4899, #06b6d4, #a855f7);
+  filter: blur(26px);
+  opacity: 0.55;
+  animation: aurora-rotate 16s linear infinite;
+}
+
+@keyframes aurora-rotate {
+  to { transform: rotate(360deg); }
+}
+
+/* Fancy square photo: animated gradient border + shine */
+.fancy-photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* match rounded-xl */
+  overflow: visible; /* changed from hidden to show the rotating frame */
+  /* animated gradient border via layered backgrounds */
+  background:
+    linear-gradient(#1f1934, #1f1934) padding-box,
+    linear-gradient(120deg, #a855f7, #ec4899, #06b6d4, #a855f7) border-box;
+  border: 2px solid transparent;
+  background-size: 200% 200%;
+  animation: border-flow 10s linear infinite, float-slow 6.5s ease-in-out infinite alternate;
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.25);
+  transition: transform .4s ease, box-shadow .4s ease;
+  will-change: transform;
+}
+
+.fancy-photo:hover {
+  transform: perspective(600px) rotateX(4deg) rotateY(-4deg);
+  box-shadow: 0 16px 40px rgba(236, 72, 153, 0.35);
+}
+
+.fancy-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(120deg,
+    rgba(255,255,255,0) 40%,
+    rgba(255,255,255,0.15) 50%,
+    rgba(255,255,255,0) 60%
+  );
+  transform: translateX(-120%) rotate(10deg);
+  animation: shine-sweep 3.2s ease-in-out infinite;
+}
+
+/* Glow layer behind the image for depth */
+.fancy-photo .glow-layer {
+  position: absolute;
+  inset: -16px;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 50% at 30% 20%, rgba(168,85,247,0.35), transparent 60%),
+    radial-gradient(40% 60% at 70% 80%, rgba(6,182,212,0.30), transparent 60%),
+    radial-gradient(50% 50% at 50% 50%, rgba(236,72,153,0.20), transparent 70%);
+  filter: blur(22px);
+  opacity: .65;
+  z-index: 0;
+}
+
+/* Ensure the direct image sits above layers */
+.fancy-photo > img {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes border-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shine-sweep {
+  0% { transform: translateX(-120%) rotate(10deg); }
+  60% { transform: translateX(120%) rotate(10deg); }
+  100% { transform: translateX(120%) rotate(10deg); }
+}
+
+@keyframes float-slow {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Ken Burns subtle zoom/pan on the photo */
+.kenburns {
+  animation: kenburns 12s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes kenburns {
+  0% { transform: scale(1) translateY(0px) translateX(0px); }
+  100% { transform: scale(1.06) translateY(-6px) translateX(-4px); }
+}
+
+/* Rotating dashed neon frame around the square */
+.fancy-photo::before {
+  content: "";
+  position: absolute;
+  inset: -6px; /* extend slightly outside for a bold frame */
+  border-radius: 24px; /* match + extend the container's radius */
+  border: 2px dashed #a855f7; /* purple dashed frame */
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+  opacity: 0.85;
+  animation: rotate-border 10s linear infinite;
+  pointer-events: none;
+  z-index: 2; /* above image */
+}
+
+@keyframes rotate-border {
+  to { transform: rotate(360deg); }
+}
+
+/* Glowing border effect for intro image */
+.glow-border {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #1f2937, #374151, #4b5563, #374151, #1f2937);
+  background-size: 200% 200%;
+  animation: gradient-flow 8s ease infinite;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .kenburns { animation: none; }
+  .fancy-photo { animation: border-flow 10s linear infinite; }
+  .fancy-photo::before { animation: none; }
+  .glow-border { animation: none; }
+  .glow-border::before { animation: none; }
+}

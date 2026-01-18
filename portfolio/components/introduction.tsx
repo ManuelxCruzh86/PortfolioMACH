@@ -6,8 +6,12 @@ import { TypeAnimation } from 'react-type-animation';
 const Introduction = () => {
     return (
         <div className="z-20 w-full">
-            <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
-                <Image src="/avatar2.png" priority width="300" height="300" alt="Avatar" />
+            <div className="z-20 grid items-start p-6 md:py-0 md:grid-cols-2">
+                <div className="-mt-10 md:-mt-0">
+                    <div className="glow-border rounded-lg">
+                        <Image src="/io3.png" priority width="300" height="300" alt="Avatar" className="relative z-10 rounded-lg" />
+                    </div>
+                </div>
                 <div className="flex flex-col justify-center max-w-md">
                     <h1 className=" mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Hello I'm <span className="text-purple-500">Manuel</span><br />
                         <TypeAnimation 
@@ -39,16 +43,16 @@ const Introduction = () => {
                             hover:shadow-xl hover:shadow-purple-500/60 hover:bg-gradient-to-r hover:from-purple-500 hover:to-fuchsia-500
                             hover:border-purple-600 hover:text-white"
                         >
-                            Ver proyectos
+                            View projects
                         </a>
                         <a
-                            href="/CV_MACH.pdf"
+                            href="/CV_ManuelCruzHernandez.pdf"
                             download
                             className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl
                             hover:shadow-xl hover:shadow-purple-500/60 hover:bg-gradient-to-r hover:from-purple-500 hover:to-fuchsia-500
                             hover:border-purple-600 hover:text-white"
                         >
-                            Descargar CV
+                            Download CV
                         </a>
                     </div>
                 </div>

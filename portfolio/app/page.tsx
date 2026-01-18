@@ -4,6 +4,9 @@ import TransitionPage from "@/components/transition-page";
 import Introduction from "@/components/introduction";
 import TechStack from "@/components/TechStack";
 import Experience from "@/components/Experience";
+import io from "@io.png";
+import io2 from "@/public/io2.png";
+import io3 from "@/public/io3.png";
 
 export default function Home() {
   return (     
@@ -18,7 +21,7 @@ export default function Home() {
 
         <Experience />
         <TechStack />
-        <div className="flex min-h-[180vh] h-full bg-no-repeat bg-gradient-cover">
+        <div className="flex min-h-[15vh] bg-no-repeat bg-gradient-cover">
 {/*           <p>Introduccion</p>
  */
  }        </div>

@@ -2,15 +2,15 @@ import {
   SiHtml5, SiCss3, SiJavascript, SiTypescript, SiCplusplus,
   SiPhp, SiPython, SiDotnet, SiReact, SiNextdotjs,
   SiAngular, SiNodedotjs, SiTailwindcss, SiMysql, SiPostgresql,
-  SiMongodb, SiFirebase
+  SiMongodb, SiFirebase, SiSharp
 } from "react-icons/si";
 
 const TechStack = () => {
   const languages = [
     { name: "HTML", icon: <SiHtml5 />, color: "#E34F26" },
-    { name: "CSS", icon: <SiCss3 />, color: "#1572B6" },
     { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
     { name: "C++", icon: <SiCplusplus />, color: "#00599C" },
+    { name: "C#", icon: <SiSharp />, color: "#339933" },
     { name: "Python", icon: <SiPython />, color: "#3776AB" },
   ];
 
@@ -20,7 +20,7 @@ const TechStack = () => {
     { name: "React", icon: <SiReact />, color: "#61DAFB" },
     { name: ".NET", icon: <SiDotnet />, color: "#512BD4" },
     { name: "Node.js", icon: <SiNodedotjs />, color: "#339933" },
-    { name: "Tailwind", icon: <SiTailwindcss />, color: "#38BDF8" },
+    { name: "Tailwind", icon: <SiTailwindcss />, color: "#050606" },
     { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" },
     { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },

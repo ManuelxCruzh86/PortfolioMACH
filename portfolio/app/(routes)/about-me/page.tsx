@@ -15,16 +15,16 @@ const TimeLine = dynamic(() => import('@/components/time-line'), {
 const AboutMePage = () => {
     return (
     
-        <div className="relative min-h-screen w-full overflow-hidden">
+        <div className="relative min-h-screen w-full overflow-hidden pb-30">
             {/* Fondo patron y opacidad */}
             <div className="absolute inset-0 bg-[url('/Patronfondo.png')] bg-repeat opacity-20 z-0" />
             <TransitionPage />
             <ContainerPage>
 {/*                 <Avatar /> */} 
                     <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-10">
-                    Toda mi{' '}
+                    My entire {' '}
                     <span className="font-bold text-purple-500">
-                        trayectoria profesional
+                        professional journey
                     </span>
                 </h1>
 
