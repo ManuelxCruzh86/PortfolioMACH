@@ -13,7 +13,7 @@ const Introduction = () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center max-w-md">
-                    <h1 className=" mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Hello I'm <span className="text-purple-500">Manuel</span><br />
+                    <h1 className=" mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Hello I’m <span className="text-purple-500">Manuel</span><br />
                         <TypeAnimation 
                             sequence={[
                                 'Software Developer',
@@ -33,7 +33,7 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                        Hi there! I’m a passionate software developer with a constant hunger for learning and building solutions. I enjoy diving deep into both frontend and backend technologies. Whether it's optimizing performance or contributing to open-source, I’m always eager to level up and take on new challenges. Currently focused on JavaScript, Angular, and .NET but always exploring new horizons in tech.
+                        Hi there! I’m a passionate software developer with a constant hunger for learning and building solutions. I enjoy diving deep into both frontend and backend technologies. Whether it’s optimizing performance or contributing to open‑source, I’m always eager to level up and take on new challenges. Currently focused on JavaScript, Angular, and .NET but always exploring new horizons in tech.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">

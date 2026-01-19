@@ -1,12 +1,15 @@
 import {
-  SiHtml5, SiCss3, SiJavascript, SiTypescript, SiCplusplus,
-  SiPhp, SiPython, SiDotnet, SiReact, SiNextdotjs,
+  SiHtml5, SiJavascript, SiCplusplus,
+  SiPython, SiDotnet, SiReact, SiNextdotjs,
   SiAngular, SiNodedotjs, SiTailwindcss, SiMysql, SiPostgresql,
   SiMongodb, SiFirebase, SiSharp
 } from "react-icons/si";
+import { ReactNode } from "react";
+
+type TechItem = { name: string; icon: ReactNode; color: string };
 
 const TechStack = () => {
-  const languages = [
+  const languages: TechItem[] = [
     { name: "HTML", icon: <SiHtml5 />, color: "#E34F26" },
     { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
     { name: "C++", icon: <SiCplusplus />, color: "#00599C" },
@@ -14,7 +17,7 @@ const TechStack = () => {
     { name: "Python", icon: <SiPython />, color: "#3776AB" },
   ];
 
-  const frameworksDB = [
+  const frameworksDB: TechItem[] = [
     { name: "Next.js", icon: <SiNextdotjs />, color: "#000000" },
     { name: "Angular", icon: <SiAngular />, color: "#DD0031" },
     { name: "React", icon: <SiReact />, color: "#61DAFB" },
@@ -27,7 +30,7 @@ const TechStack = () => {
     { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },
   ];
 
-const renderTech = (techList: any[]) => (
+const renderTech = (techList: TechItem[]) => (
   <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
     {techList.map((tech, index) => (
   <div
