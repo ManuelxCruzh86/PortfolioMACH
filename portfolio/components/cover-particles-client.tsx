@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic'
 
-const CoverParticlesDynamic = dynamic(() => import('./cover-particles'), {
+const VoidNebula = dynamic(() => import('./void-nebula'), {
   ssr: false,
   loading: () => (
     <div className="pointer-events-none fixed inset-0 z-0 flex items-center justify-center">
@@ -12,5 +12,5 @@ const CoverParticlesDynamic = dynamic(() => import('./cover-particles'), {
 })
 
 export default function CoverParticlesClient() {
-  return <CoverParticlesDynamic />
+  return <VoidNebula />
 }

@@ -20,7 +20,7 @@ const TechStack = () => {
     { name: "React", icon: <SiReact />, color: "#61DAFB" },
     { name: ".NET", icon: <SiDotnet />, color: "#512BD4" },
     { name: "Node.js", icon: <SiNodedotjs />, color: "#339933" },
-    { name: "Tailwind", icon: <SiTailwindcss />, color: "#050606" },
+    { name: "Tailwind", icon: <SiTailwindcss />, color: "#38B2AC" },
     { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" },
     { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
@@ -48,8 +48,8 @@ const renderTech = (techList: any[]) => (
 
 
   return (
-      <section className="px-6 py-12 text-white rounded-xl shadow-lg mt-20">
-      <h1 className="mb-6 text-3xl font-bold text-center text-purple-400">Technologies</h1>
+      <section className="relative z-20 px-6 py-12 text-white rounded-xl shadow-lg mt-20">
+      <h1 className="relative z-20 mb-6 text-3xl font-bold text-center text-purple-400">Technologies</h1>
       <br></br>
       <div className="mb-10">
         <h3 className="text-center mb-4 text-xl font-semibold text-white">Programming Languages</h3>
