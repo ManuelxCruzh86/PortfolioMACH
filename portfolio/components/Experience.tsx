@@ -5,9 +5,9 @@ import { dataAboutPage } from "@/data";
 
 const Experience = () => {
   return (
-    <section className="mt-20 px-6 py-10">
+    <section className="relative z-20 mt-20 px-6 py-10">
       <motion.h2
-        className="text-3xl font-bold text-center text-purple-400 mb-12"
+        className="relative z-20 text-3xl font-bold text-center text-purple-400 mb-12"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
