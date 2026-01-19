@@ -1,5 +1,4 @@
 import AvatarServices from "@/components/avatar-services";
-import CircleImage from "@/components/cricle-image";
 import TransitionPage from "@/components/transition-page";
 import SliderServicesClient from '@/components/slider-services-client'
 
