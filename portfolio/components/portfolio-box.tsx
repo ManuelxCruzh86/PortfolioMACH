@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaExternalLinkAlt } from "react-icons/fa";
 
 interface PortfolioBoxProps {
   data: {
@@ -9,13 +9,14 @@ interface PortfolioBoxProps {
     image: string;
     urlGithub: string;
     urlDemo: string;
+    urlDeploy: string;
     description: string;
     technologies: string[];
   };
 }
 
 const PortfolioBox = ({ data }: PortfolioBoxProps) => {
-  const { title, image, urlGithub, urlDemo, description, technologies } = data;
+  const { title, image, urlGithub, urlDemo, urlDeploy, description, technologies } = data;
 
   return (
     <div className="flex flex-col justify-between w-full max-w-sm rounded-xl border border-neutral-700 bg-gray-900 text-white shadow-lg overflow-hidden">
@@ -50,6 +51,9 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           </Link>
           <Link href={urlDemo} target="_blank" className="hover:text-purple-400 transition">
             <FaYoutube size={20} />
+          </Link>
+          <Link href={urlDeploy} target="_blank" className="hover:text-purple-400 transition">
+            <FaExternalLinkAlt size={20} />
           </Link>
         </div>
       </div>
