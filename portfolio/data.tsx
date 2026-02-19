@@ -216,6 +216,17 @@ export const dataPortfolio = [
   },
   {
     id: 2,
+    title: "Clinicore-Suite",
+    image: "/Clinicore.png",
+    urlGithub: "https://github.com/ManuelxCruzh86/CliniCore-Suite",
+    urlDemo: "https://www.youtube.com/watch?v=cBV3luT9w0A&t=449s",
+    urlDeploy: "https://clini-core-suite.vercel.app",
+    description: "Platform for administration of medical and clinical offices, allowing management of patients, doctors, appointments and medical records with interoperability capability through the FHIR standard.",
+    technologies: [".NET","C#", "Blazor", "ASP.NET", "MYSQL"],
+    
+  },
+  {
+    id: 3,
     title: "McCarthy's Core",
     image: "/McCarthys.png",
     urlGithub: "https://github.com/ManuelxCruzh86/McCarthy-s-Core",
@@ -225,7 +236,7 @@ export const dataPortfolio = [
     technologies: ["React", "Node.js", "Scss", "MYSQL"],    
   },
   {
-    id: 3,
+    id: 4,
     title: "ExVixel",
     image: "/ExVixel.png",
     urlGithub: "https://github.com/ManuelxCruzh86/ExVixel",
@@ -233,16 +244,6 @@ export const dataPortfolio = [
     urlDeploy: "#!",
     description: "Image Processing Application with filters, color detection and real-time analysis.",
     technologies: [".NET","C#", "Windows Forms", "AForge.NET"],
-  },
-  {
-    id: 4,
-    title: "Clinicore-Suite",
-    image: "/Clinicore.png",
-    urlGithub: "https://github.com/ManuelxCruzh86/CliniCore-Suite",
-    urlDemo: "https://www.youtube.com/watch?v=9EXP2JmCUR0",
-    urlDeploy: "#!",
-    description: "Platform for administration of medical and clinical offices, allowing management of patients, doctors, appointments and medical records with interoperability capability through the FHIR standard.",
-    technologies: [".NET","C#", "Blazor", "ASP.NET", "MYSQL"],
   },
   {
     id: 5,
